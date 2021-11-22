@@ -2,6 +2,8 @@ import {IonButton, IonContent, IonHeader, IonItem, IonPage, IonTitle,IonToolbar,
 import ReactAudioPlayer from 'react-audio-player';
 import React from "react";
 
+//The original codes are from here: https://github.com/DoQuocBinh/TCH1902-Ionic/blob/master/nativefunctions/src/pages/Home.tsx 
+
 const Home: React.FC = () => {
     var musicPlayer: ReactAudioPlayer | null  
       
@@ -9,7 +11,7 @@ const Home: React.FC = () => {
       <IonPage>
         <IonHeader>
           <IonToolbar>
-            <IonTitle>Native functions</IonTitle>
+            <IonTitle>Native functions page</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen>
