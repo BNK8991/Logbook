@@ -14,14 +14,17 @@ const Home: React.FC = () => {
         </IonHeader>
         <IonContent fullscreen>
           <IonItem>
-            <IonButton onClick={() => musicPlayer?.audioEl.current?.play()}>Play music</IonButton>
-            <IonButton onClick={() => musicPlayer?.audioEl.current?.pause()}>Pause music</IonButton>
+            <IonButton onClick={() => musicPlayer?.audioEl.current?.play()}>Play bell's sound</IonButton>
+            <IonButton onClick={() => musicPlayer?.audioEl.current?.pause()}>Pause bell's sound</IonButton>
             <ReactAudioPlayer
               ref={(element) => { musicPlayer = element; }}
               src="./assets/music.mp3"
             // controls
             />
           </IonItem>
+          <IonItem>
+          <IonButton onClick={() => navigator.vibrate(2500)}>Vibrate</IonButton>
+        </IonItem>
         </IonContent>
       </IonPage>
     );
